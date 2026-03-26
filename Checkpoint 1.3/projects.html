@@ -10,7 +10,7 @@
   <body>
     <header class="site-header">
       <h1>Projects</h1>
-      <p>My work and portfolio progress.</p>
+      <p>A collection of my work and development progress.</p>
     </header>
 
     <nav aria-label="Primary navigation">
@@ -20,24 +20,57 @@
         <li><a href="projects.html" aria-current="page">Projects</a></li>
       </ul>
 
-      <button id="theme-toggle">Toggle Theme</button>
+      <button id="theme-toggle" class="button button-secondary" type="button">
+        Toggle Theme
+      </button>
     </nav>
 
     <main>
-      <section class="project-card">
-        <h2>Portfolio Website</h2>
-        <p>This project shows my progress through checkpoints.</p>
+      <article>
+        <header>
+          <h2>My Work</h2>
+        </header>
 
-        <button class="details-btn" data-target="details1">
-          Show Details
-        </button>
-
-        <div id="details1" hidden>
+        <!-- Project 1 -->
+        <section class="project-card">
+          <h3>Portfolio Website</h3>
           <p>
-            Built using semantic HTML, CSS styling, and JavaScript interactivity.
+            This project documents the development of my portfolio across multiple checkpoints.
           </p>
-        </div>
-      </section>
+
+          <button class="details-button" type="button" data-target="project1">
+            Show Details
+          </button>
+
+          <div id="project1" hidden>
+            <p>
+              Built using semantic HTML, external CSS styling, responsive design,
+              and JavaScript interactivity. This project reflects my progress in
+              structuring, styling, and adding behaviour to a website.
+            </p>
+          </div>
+        </section>
+
+        <!-- Project 2 -->
+        <section class="project-card">
+          <h3>Future Project</h3>
+          <p>
+            This section represents future projects that I will continue to develop.
+          </p>
+
+          <button class="details-button" type="button" data-target="project2">
+            Show Details
+          </button>
+
+          <div id="project2" hidden>
+            <p>
+              I plan to expand this portfolio by adding more real-world projects
+              and improving both design and functionality over time.
+            </p>
+          </div>
+        </section>
+
+      </article>
     </main>
 
     <footer>
