@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quotes — Eugenie</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <h1>Quotes</h1>
+</header>
+
+<nav aria-label="Primary navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="quotes.html" aria-current="page">Quotes</a></li>
+  </ul>
+
+  <button id="theme-toggle" class="button button-secondary">Toggle Theme</button>
+</nav>
+
+<main>
+  <p id="loading">Loading...</p>
+  <p id="error-message" style="display:none;"></p>
+  <section id="quote-container"></section>
+
+  <button id="new-quote" class="button button-primary">New Quote</button>
+</main>
+
+<footer>
+  <p>&copy; 2026 Eugenie</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>

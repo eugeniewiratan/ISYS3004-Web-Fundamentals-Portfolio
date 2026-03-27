@@ -257,7 +257,18 @@ footer a {
 .dark-mode .details-button:hover {
   background-color: #1e1e22;
 }
+/* -------------------------
+   QUOTE API STYLING
+------------------------- */
+blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
 
+#error-message {
+  color: #ff6b6b;
+}
 /* -------------------------
    RESPONSIVE DESIGN
 ------------------------- */
