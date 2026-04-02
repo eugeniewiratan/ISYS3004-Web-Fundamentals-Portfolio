@@ -118,7 +118,7 @@ nav a:focus {
 }
 
 /* -------------------------
-   BUTTONS (FIXED VERSION)
+   BUTTONS
 ------------------------- */
 .button-group {
   display: flex;
@@ -140,7 +140,6 @@ nav a:focus {
   cursor: pointer;
 }
 
-/* PRIMARY BUTTON (LIGHT MODE) */
 .button-primary {
   background-color: #f0f0f0;
   color: #111111;
@@ -151,7 +150,6 @@ nav a:focus {
   background-color: #cfcfcf;
 }
 
-/* SECONDARY BUTTON */
 .button-secondary:hover,
 .button-secondary:focus,
 .details-button:hover,
@@ -197,6 +195,56 @@ li {
 }
 
 /* -------------------------
+   REPOSITORY CARD
+------------------------- */
+#repos-container {
+  margin-top: 1rem;
+}
+
+.repo-card {
+  background-color: #141416;
+  border: 1px solid #2a2a2d;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.repo-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.repo-card p {
+  margin: 0.5rem 0;
+}
+
+.repo-card a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.repo-card a:hover,
+.repo-card a:focus {
+  color: #bdbdbd;
+}
+
+#error-message,
+#quote-error {
+  color: #ff8f8f;
+}
+
+/* -------------------------
+   QUOTE AREA
+------------------------- */
+#quote-text {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+#quote-author {
+  color: #b8b8b8;
+}
+
+/* -------------------------
    FOOTER
 ------------------------- */
 footer {
@@ -209,7 +257,7 @@ footer a {
 }
 
 /* -------------------------
-   DARK MODE (FIXED)
+   DARK MODE
 ------------------------- */
 .dark-mode {
   background-color: #050505;
@@ -227,7 +275,8 @@ footer a {
 .dark-mode article p,
 .dark-mode section p,
 .dark-mode li,
-.dark-mode footer {
+.dark-mode footer,
+.dark-mode #quote-author {
   color: #c7c7c7;
 }
 
@@ -235,7 +284,6 @@ footer a {
   color: #f2f2f2;
 }
 
-/* FIXED PRIMARY BUTTON (IMPORTANT FIX) */
 .dark-mode .button-primary {
   background-color: #2a2a2f;
   color: #f2f2f2;
@@ -257,18 +305,12 @@ footer a {
 .dark-mode .details-button:hover {
   background-color: #1e1e22;
 }
-/* -------------------------
-   QUOTE API STYLING
-------------------------- */
-blockquote {
-  font-size: 1.3rem;
-  font-style: italic;
-  margin-bottom: 1rem;
+
+.dark-mode .repo-card {
+  background-color: #0d0d0f;
+  border-color: #3a3a40;
 }
 
-#error-message {
-  color: #ff6b6b;
-}
 /* -------------------------
    RESPONSIVE DESIGN
 ------------------------- */

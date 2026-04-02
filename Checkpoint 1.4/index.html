@@ -1,47 +1,85 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eugenie — Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eugenie — Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 
-<body>
+  <body>
+    <header class="site-header">
+      <h1>Eugenie</h1>
+      <p>A portfolio documenting my growth in design, discipline, and web development.</p>
+    </header>
 
-<header class="site-header">
-  <h1>Eugenie</h1>
-  <p>A portfolio documenting my growth in design and web development.</p>
-</header>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+      </ul>
 
-<nav aria-label="Primary navigation">
-  <ul>
-    <li><a href="index.html" aria-current="page">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="quotes.html">Quotes</a></li>
-  </ul>
+      <button id="theme-toggle" class="button button-secondary" type="button">
+        Dark Mode
+      </button>
+    </nav>
 
-  <button id="theme-toggle" class="button button-secondary">Toggle Theme</button>
-</nav>
+    <main>
+      <section class="hero">
+        <div class="hero-image">
+          <img src="images/home-photo.jpeg" alt="Portrait of Eugenie on the home page">
+        </div>
 
-<main>
-  <section class="hero">
-    <div class="hero-image">
-      <img src="images/home-photo.jpeg" alt="Portrait">
-    </div>
+        <div class="hero-text">
+          <h2>Hey, I’m Eugenie.</h2>
+          <p>
+            I am building this portfolio as part of my web development unit while also
+            developing my style, discipline, and technical skills.
+          </p>
 
-    <div class="hero-text">
-      <h2>Hey, I’m Eugenie.</h2>
-      <p>I’m building this portfolio step by step while developing my skills.</p>
-    </div>
-  </section>
-</main>
+          <div class="button-group">
+            <a class="button button-primary" href="about.html">About Me</a>
+            <a class="button button-secondary" href="projects.html">My Work</a>
+          </div>
+        </div>
+      </section>
 
-<footer>
-  <p>&copy; 2026 Eugenie</p>
-</footer>
+      <article>
+        <header>
+          <h2>Welcome</h2>
+        </header>
 
-<script src="js/main.js"></script>
-</body>
+        <p>
+          This portfolio is growing step by step. It started with semantic HTML,
+          then CSS styling, and now includes JavaScript interactivity and API integration.
+        </p>
+
+        <section>
+          <h3>Current Interests</h3>
+          <ul>
+            <li>Web development and digital skills</li>
+            <li>Discipline through training and routine</li>
+            <li>Personal style, branding, and aesthetics</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>What This Site Is Becoming</h3>
+          <ol>
+            <li>A responsive personal portfolio</li>
+            <li>A website with interactive features</li>
+            <li>A record of my development progress</li>
+          </ol>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Eugenie</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

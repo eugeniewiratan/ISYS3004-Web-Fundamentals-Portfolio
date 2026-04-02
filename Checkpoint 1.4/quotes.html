@@ -1,42 +1,63 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quotes — Eugenie</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quotes — Eugenie</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 
-<body>
+  <body>
+    <header class="site-header">
+      <h1>Quotes</h1>
+      <p>A small interactive page that displays motivational quotes using API data.</p>
+    </header>
 
-<header class="site-header">
-  <h1>Quotes</h1>
-</header>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quotes.html" aria-current="page">Quotes</a></li>
+      </ul>
 
-<nav aria-label="Primary navigation">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="quotes.html" aria-current="page">Quotes</a></li>
-  </ul>
+      <button id="theme-toggle" class="button button-secondary" type="button">
+        Dark Mode
+      </button>
+    </nav>
 
-  <button id="theme-toggle" class="button button-secondary">Toggle Theme</button>
-</nav>
+    <main>
+      <article>
+        <header>
+          <h2>Quote Generator</h2>
+        </header>
 
-<main>
-  <p id="loading">Loading...</p>
-  <p id="error-message" style="display:none;"></p>
-  <section id="quote-container"></section>
+        <p>
+          This page demonstrates JavaScript interactivity by fetching quote data
+          from an external API.
+        </p>
 
-  <button id="new-quote" class="button button-primary">New Quote</button>
-</main>
+        <section>
+          <h3>Featured Quote</h3>
+          <p id="quote-text">Click the button below to load a quote.</p>
+          <p id="quote-author"></p>
+          <p id="quote-loading" hidden>Loading quote...</p>
+          <p id="quote-error" hidden></p>
 
-<footer>
-  <p>&copy; 2026 Eugenie</p>
-</footer>
+          <div class="button-group">
+            <button id="load-quote" class="button button-primary" type="button">
+              Load Quote
+            </button>
+          </div>
+        </section>
+      </article>
+    </main>
 
-<script src="js/main.js"></script>
-<script src="js/api.js"></script>
-</body>
+    <footer>
+      <p>&copy; 2026 Eugenie</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+  </body>
 </html>
